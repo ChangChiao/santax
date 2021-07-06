@@ -1,0 +1,29 @@
+.title{
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 50px 0; 
+    letter-spacing:3px;
+    &::after{
+        content: "";
+        display: block;
+        border: 12px solid #333;
+        border-top: 12px solid rgba(65,118,124,0.5);
+        height: 0;
+        width: 0;
+        margin:20px auto;
+    }
+    padding:1rem;
+    h2{
+        padding:1%;
+        word-spacing:1rem;
+        font-weight:bold; 
+    }
+    p{
+        font-size:1rem;
+        color:#555;
+        line-height:1rem; 
+    }
+}
