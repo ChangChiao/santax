@@ -14,7 +14,6 @@
                 <div class="series__list__item__text">
                     <p>{{ vo.type }}</p>
                     <p>{{ vo.name }}</p>
-                    <a>了解更多</a>
                 </div>
                 <div
                     class="series__list__item__pic"
@@ -36,7 +35,7 @@ export default {
                     type: "Trainmaster",
                     name: "鐵道系列",
                     link: "t-1",
-                    img: "01",
+                    img: "04",
                 },
                 {
                     type: "Engineer",
@@ -44,8 +43,8 @@ export default {
                     link: "e-1",
                     img: "02",
                 },
-                { type: "Deepsea", name: "潛水系列", link: "d-1", img: "03" },
-                { type: "GMT-master", name: "GMT系列", link: "g-1", img: "04" },
+                { type: "Deepsea", name: "潛水系列", link: "d-1", img: "01" },
+                { type: "GMT-master", name: "GMT系列", link: "g-1", img: "03" },
             ],
         };
     },
@@ -76,19 +75,18 @@ export default {
             &__3 {
                 background-color: rgb(59, 65, 67);
             }
-            &:nth-of-type(even) {
-            }
             &::after {
                 content: "";
                 display: block;
                 height: 0;
                 width: 0;
                 border-bottom: 200px solid transparent;
-                border-right: 200px solid rgba(255, 255, 255, 0.3);
                 position: absolute;
+                left: 0;
+                border-left: 200px solid rgba(255, 255, 255, 0.3);
                 z-index: 2;
                 top: 0;
-                right: 0;
+                left: 0;
             }
             &::before {
                 content: "";
@@ -96,40 +94,50 @@ export default {
                 height: 0;
                 width: 0;
                 border-bottom: 90px solid transparent;
-                border-right: 90px solid rgba(255, 255, 255, 0.3);
+                border-left: 90px solid rgba(255, 255, 255, 0.3);
                 position: absolute;
                 z-index: 3;
                 top: 0;
-                right: 0;
+                left: 0;
+            }
+            &:nth-of-type(even) {
+                flex-direction: row-reverse;
+                &::after {
+                    border-left: none;
+                    right: 0;
+                    left: auto;
+                    border-right: 200px solid rgba(255, 255, 255, 0.3);
+                }
+                &::before {
+                    border-left: none;
+                    right: 0;
+                    left: auto;
+                    border-right: 90px solid rgba(255, 255, 255, 0.3);
+                }
+                .series__list__item__pic {
+                    background-position: 90% 40%;
+                }
             }
             &__text {
                 display: inline-block;
                 width: 40%;
                 font-size: 1.2rem;
-                color: #fff;
+                position: relative;
+                max-width: 200px;
+                height: 50px;
+                font-size: 0.8rem;
+                border: 2px solid #fff;
                 text-align: center;
-                margin-top: 60px;
-                vertical-align: middle;
-                a {
-                    display: inline-block;
-                    position: relative;
-                    font-family: "微軟正黑體";
-                    vertical-align: middle;
-                    z-index: 3;
-                    color: #fff;
-                    width: 100%;
-                    height: 50px;
-                    font-size: 0.8rem;
-                    border: 2px solid #fff;
-                    text-align: center;
-                    letter-spacing: 3px;
-                    color: #fff;
-                    margin: auto;
-                    box-sizing: border-box;
+                letter-spacing: 3px;
+                color: #fff;
+                margin: auto;
+                box-sizing: border-box;
+                p {
+                    padding: 5px 0;
                 }
             }
             &__pic {
-                background-position: 90% 40%;
+                background-position: 10% 40%;
                 height: 200px;
                 width: 40%;
             }

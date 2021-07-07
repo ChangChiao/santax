@@ -1,0 +1,26 @@
+.slider{
+    background-size: cover;
+    height: 0px;
+    padding-bottom: 500px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+    &__content{
+        width: 30%;
+        position: absolute;
+        left: 7%;
+        bottom: 10%;
+        &__title{
+            font-size: 1.5rem;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            padding-bottom: 10px;
+        }
+        &__text{
+            color: #ccc;
+            line-height: 1.5rem;
+            text-align: left;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

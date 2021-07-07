@@ -85,10 +85,13 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-    height: 80px;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.7);
     transform-style: preserve-3d;
     position: relative;
+    position: fixed;
+    left: 0;
+    width: 100%;
     z-index: 100;
     &__list {
         width: 75%;
@@ -113,7 +116,7 @@ export default {
         }
         &__sub {
             background-color: rgba(0, 0, 0, 0.7);
-            top: 52px;
+            top: 42px;
             position: absolute;
             padding-top: 20px;
             height: 240px;

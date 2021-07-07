@@ -14,16 +14,22 @@
         </div>
         <index-watch />
         <index-series />
+        <index-distributor />
+        <index-celebrity />
     </div>
 </template>
 
 <script>
 import IndexWatch from "../components/IndexWatch";
 import IndexSeries from "../components/IndexSeries";
+import IndexDistributor from "../components/IndexDistributor";
+import IndexCelebrity from "../components/IndexCelebrity";
 export default {
     components: {
         IndexWatch,
         IndexSeries,
+        IndexDistributor,
+        IndexCelebrity,
     },
     data() {
         return {};
