@@ -84,6 +84,7 @@ export default {
     &__list {
         display: flex;
         width: 100%;
+        margin-bottom: 100px;
         &__item {
             width: 25%;
             cursor: pointer;
