@@ -49,11 +49,19 @@ export default {
                         { name: "極限測試", link: "/test" },
                     ],
                 },
-                { name: "鐵道系列", link: "railway", subMenu: false },
-                { name: "工程系列", link: "engineer", subMenu: false },
+                {
+                    name: "鐵道系列",
+                    link: "/series?s=trainmastr",
+                    subMenu: false,
+                },
+                {
+                    name: "工程系列",
+                    link: "/series?s=enginner",
+                    subMenu: false,
+                },
                 { name: "", link: "", subMenu: false },
-                { name: "潛水系列", link: "diving", subMenu: false },
-                { name: "GMT系列", link: "gmt", subMenu: false },
+                { name: "潛水系列", link: "/series?s=deepsea", subMenu: false },
+                { name: "GMT系列", link: "/series?s=gmt", subMenu: false },
                 {
                     name: "客戶服務",
                     link: "",

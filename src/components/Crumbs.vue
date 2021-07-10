@@ -1,39 +1,38 @@
 <template>
-    <div>
+    <div class="crumbs">
         <span>首頁</span>
         <span>></span>
-        <span>{{ series }}</span>
+        <span>{{ seriesData[series]["series"] }}</span>
         <span>></span>
         <span>{{ model }}</span>
     </div>
 </template>
 
 <script>
-import watchData from "/watch.json";
+import seriesData from "@/assets/json/series";
 export default {
-    watch: {
-        "$route.query.id": {
-            immediate: true,
-            handler: function (val) {
-                const [ser, mod] = val.split("-");
-                this.series = this.seriesList[ser];
-                this.model = mod;
-            },
-        },
+    props: {
+        series: String,
+        model: String,
     },
     data() {
         return {
-            seriesList: {
-                e: "工程師系列",
-                g: "GMT系列",
-                d: "潛水系列",
-                t: "鐵道系列",
-            },
-            series: "",
-            model: "",
+            seriesData,
         };
     },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.crumbs {
+    text-align: left;
+    span {
+        padding: 0 5px;
+        color: #888;
+        cursor: pointer;
+        &:hover {
+            color: #666;
+        }
+    }
+}
+</style>
