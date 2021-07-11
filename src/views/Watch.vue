@@ -35,7 +35,7 @@
                     )}-b.png`"
                     alt=""
                 />
-                <div class="watch__detail__text">
+                <div class="watch__detail__item__text">
                     <h5>{{ singleData.material }}</h5>
                     <p>{{ material[singleData.material] }}</p>
                 </div>
@@ -47,9 +47,9 @@
                     )}-s.png`"
                     alt=""
                 />
-                <div class="watch__detail__text">
-                    <h5>{{ singleData.title }}</h5>
-                    <p>{{ singleData.content }}</p>
+                <div class="watch__detail__item__text">
+                    <h5>{{ seriesData[series].title }}</h5>
+                    <p>{{ seriesData[series].content }}</p>
                 </div>
             </div>
             <div class="watch__detail__item">
@@ -59,7 +59,7 @@
                     }.png`"
                     alt=""
                 />
-                <div class="watch__detail__text">
+                <div class="watch__detail__item__text">
                     <h5>{{ singleData.caliber }}型機芯</h5>
                     <p>
                         {{
@@ -68,12 +68,12 @@
                     </p>
                 </div>
             </div>
-            <h4>{{ seriesData[series].title }}</h4>
+            <h4 class="watch__slogan">{{ seriesData[series].title }}</h4>
             <div class="watch__demo">
                 <img
                     :src="`/images/watch/${prefix}/${prefix}-${parseInt(
                         index + 1
-                    )}-b-0.png`"
+                    )}-0.png`"
                     alt=""
                 />
                 <p>{{ seriesData[series].slogan }}</p>
@@ -113,9 +113,10 @@ export default {
         "$route.query.id": {
             immediate: true,
             handler: function (val) {
+                if (!val) return;
                 const [ser, mod] = val.split("_");
                 this.series = ser;
-                this.index = mod;
+                this.index = Number(mod);
             },
         },
     },
@@ -130,7 +131,7 @@ export default {
 <style lang="scss" scoped>
 .watch {
     text-align: center;
-    padding: 100px 50px;
+    padding: 100px 0px;
     &__name {
         color: #41767c;
         font-size: 25px;
@@ -146,9 +147,10 @@ export default {
     &__info {
         display: flex;
         justify-content: center;
+        padding-bottom: 50px;
         img {
-            width: 30%;
-            max-width: 400px;
+            width: 35%;
+            max-width: 450px;
             margin-right: 100px;
         }
         ul {
@@ -166,7 +168,7 @@ export default {
                         height: 10px;
                         width: 10px;
                         font-size: 1rem;
-                        background-color: #4c7c83;
+                        background-color: $base;
                         border-radius: 50%;
                         position: absolute;
                         top: 10px;
@@ -174,6 +176,70 @@ export default {
                     }
                 }
             }
+        }
+    }
+    &__detail {
+        &__item {
+            background-color: rgba(65, 118, 124, 0.5);
+            display: flex;
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                background: #fff;
+            }
+            img {
+                width: 50%;
+                height: 350px;
+                object-fit: cover;
+            }
+            &__text {
+                width: 50%;
+                padding: 30px 20px;
+                text-align: left;
+                h5 {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    color: #4c7c83;
+                    padding: 20px 0;
+                    text-align: center;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    color: #666;
+                    padding: 0 50px;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+    &__slogan {
+        font-size: 1.5rem;
+        color: $base;
+        margin: 50px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__demo {
+        height: 350px;
+        background-color: #000;
+        margin: 30px 0;
+        align-items: center;
+        overflow: hidden;
+        display: flex;
+        img {
+            cursor: pointer;
+            position: relative;
+            top: 200px;
+            width: 60%;
+            transition: 3s;
+            &:hover {
+                top: 50px;
+            }
+        }
+        p {
+            width: 40%;
+            color: #fff;
+            font-size: 1.4rem;
         }
     }
 }
