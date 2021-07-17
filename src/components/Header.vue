@@ -66,7 +66,7 @@ export default {
                     name: "客戶服務",
                     link: "",
                     subMenu: [
-                        { name: "經銷商據點", link: "/serviceCenter" },
+                        { name: "經銷商據點", link: "/service" },
                         { name: "維修中心", link: "/serviceCenter" },
                         { name: "常見問題", link: "/question" },
                         { name: "使用說明", link: "/directions" },
