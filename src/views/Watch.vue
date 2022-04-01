@@ -5,7 +5,7 @@
         <h3 class="watch__model">{{ singleData.model }}</h3>
         <div class="watch__info">
             <img
-                :src="`/images/watch/${prefix}/${prefix}-${parseInt(
+                :src="`@/assets/images/watch/${prefix}/${prefix}-${parseInt(
                     index + 1
                 )}.png`"
                 alt=""
@@ -30,7 +30,7 @@
         <div class="watch__detail">
             <div class="watch__detail__item">
                 <img
-                    :src="`/images/watch/${prefix}/${prefix}-${parseInt(
+                    :src="`@/assets/images/watch/${prefix}/${prefix}-${parseInt(
                         index + 1
                     )}-b.png`"
                     alt=""
@@ -42,7 +42,7 @@
             </div>
             <div class="watch__detail__item">
                 <img
-                    :src="`/images/watch/${prefix}/${prefix}-${parseInt(
+                    :src="`@/assets/images/watch/${prefix}/${prefix}-${parseInt(
                         index + 1
                     )}-s.png`"
                     alt=""
@@ -54,7 +54,7 @@
             </div>
             <div class="watch__detail__item">
                 <img
-                    :src="`/images/world/${
+                    :src="`@/assets/images/world/${
                         caliberList[getRandomInt(0, 3)]
                     }.png`"
                     alt=""
@@ -71,7 +71,7 @@
             <h4 class="watch__slogan">{{ seriesData[series].title }}</h4>
             <div class="watch__demo">
                 <img
-                    :src="`/images/watch/${prefix}/${prefix}-${parseInt(
+                    :src="`@/assets/images/watch/${prefix}/${prefix}-${parseInt(
                         index + 1
                     )}-0.png`"
                     alt=""

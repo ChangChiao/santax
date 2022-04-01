@@ -26,7 +26,7 @@
             </li>
         </ul>
         <div class="header__logo" @click="goPage('/')">
-            <img src="/images/logo.png" alt="" />
+            <img src="@/assets/images/logo.png" alt="" />
             <h6>SANTAX</h6>
             <p>森塔斯</p>
         </div>

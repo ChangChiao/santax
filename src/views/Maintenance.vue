@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/watchmaking_player_co_axial_Large_1600x900.jpg);
+                background-image: url(@/assets/images/banner/watchmaking_player_co_axial_Large_1600x900.jpg);
             "
         >
             <div class="slider__content">
@@ -30,14 +30,16 @@
                 <div
                     class="maintain__list__item__pic maintain__pic"
                     :style="{
-                        backgroundImage: `url(/images/service/do-${i + 1}.jpg)`,
+                        backgroundImage: `url(@/assets/images/service/do-${
+                            i + 1
+                        }.jpg)`,
                     }"
                 ></div>
             </li>
         </ul>
         <div
             class="maintain__all__pic maintain__pic"
-            style="background-image: url(/images/service/do-all.jpg)"
+            style="background-image: url(@/assets/images/service/do-all.jpg)"
         >
             <div class="maintain__all__content maintain__content">
                 <h4>Step 9</h4>

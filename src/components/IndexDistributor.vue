@@ -17,7 +17,7 @@ export default {};
 <style lang="scss" scoped>
 .distributor {
     &__store {
-        background-image: url(/images/retailer.jpg);
+        background-image: url("~@/assets/images/retailer.jpg");
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;

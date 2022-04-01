@@ -2,7 +2,9 @@
     <div class="celebrity">
         <div
             class="slider"
-            style="background-image: url(/images/banner/1maintenancead.jpg)"
+            style="
+                background-image: url(@/assets/images/banner/1maintenancead.jpg);
+            "
         >
             <div class="slider__content">
                 <h1 class="slider__content__title">名人故事</h1>
@@ -20,7 +22,7 @@
                 v-for="(vo, i) in list"
                 :key="i + 'ce'"
                 :style="{
-                    backgroundImage: `url(/images/person/${
+                    backgroundImage: `url(@/assets/images/person/${
                         nowIndex === i ? 'story-p' + i : 'p' + i
                     }.jpg)`,
                 }"

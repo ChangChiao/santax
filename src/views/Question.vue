@@ -2,7 +2,9 @@
     <div class="question">
         <div
             class="slider"
-            style="background-image: url(/images/banner/homepage_find.jpg)"
+            style="
+                background-image: url(@/assets/images/banner/homepage_find.jpg);
+            "
         >
             <div class="slider__content">
                 <h1 class="slider__content__title">常見問題</h1>
@@ -16,7 +18,7 @@
         </div>
         <div class="question__main">
             <div class="question__main__pic">
-                <img src="/images/watch/e/e-9-0.png" alt="" />
+                <img src="@/assets/images/watch/e/e-9-0.png" alt="" />
             </div>
             <ul class="question__main__content">
                 <li
@@ -32,7 +34,7 @@
                 </li>
             </ul>
             <div class="question__main__pic">
-                <img src="/images/watch/t/t-4-0.png" alt="" />
+                <img src="@/assets/images/watch/t/t-4-0.png" alt="" />
             </div>
         </div>
     </div>

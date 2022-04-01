@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/page-06-watchfinder-header-large.jpg);
+                background-image: url(@/assets/images/banner/page-06-watchfinder-header-large.jpg);
             "
         >
             <div class="slider__content">
@@ -21,7 +21,9 @@
         <div :class="['brand__item', { in: inView.includes(0) }]">
             <div
                 class="brand__item__pic"
-                style="background-image: url(/images/story/ourmaison.jpg)"
+                style="
+                    background-image: url(@/assets/images/story/ourmaison.jpg);
+                "
             ></div>
             <div class="brand__item__text">
                 <h3>1956年</h3>
@@ -42,7 +44,7 @@
             <div
                 class="brand__item__pic"
                 style="
-                    background-image: url(/images/story/wildorf_hans_1908_0001_840x770.jpg);
+                    background-image: url(@/assets/images/story/wildorf_hans_1908_0001_840x770.jpg);
                 "
             ></div>
             <div class="brand__item__text">
@@ -58,7 +60,7 @@
             <div
                 class="brand__item__pic"
                 style="
-                    background-image: url(/images/story/1955_submariner_0001_1680x700.jpg);
+                    background-image: url(@/assets/images/story/1955_submariner_0001_1680x700.jpg);
                 "
             ></div>
             <div class="brand__item__text">
@@ -73,7 +75,7 @@
             <div
                 class="brand__item__pic"
                 style="
-                    background-image: url(/images/story/geneva_0001_840x770.jpg);
+                    background-image: url(@/assets/images/story/geneva_0001_840x770.jpg);
                 "
             ></div>
             <div class="brand__item__text">
@@ -89,7 +91,7 @@
             <div
                 class="brand__item__pic"
                 style="
-                    background-image: url(/images/story/first_transcontinental_flights__0001_840x420.jpg);
+                    background-image: url(@/assets/images/story/first_transcontinental_flights__0001_840x420.jpg);
                 "
             ></div>
             <div class="brand__item__text">
@@ -103,7 +105,7 @@
         <div :class="['brand__item', { in: inView.includes(5) }]">
             <div
                 class="brand__item__pic"
-                style="background-image: url(/images/story/201604.jpg)"
+                style="background-image: url(@/assets/images/story/201604.jpg)"
             ></div>
             <div class="brand__item__text">
                 <h3>1972迄今</h3>
@@ -114,7 +116,7 @@
             </div>
             <div
                 class="brand__item__pic"
-                style="background-image: url(/images/story/droite.jpg)"
+                style="background-image: url(@/assets/images/story/droite.jpg)"
             ></div>
         </div>
     </div>

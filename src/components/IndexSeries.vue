@@ -18,7 +18,7 @@
                 <div
                     class="series__list__item__pic"
                     :style="{
-                        backgroundImage: `url(/images/watch/${vo.img}.png)`,
+                        backgroundImage: `url(@/assets/images/watch/${vo.img}.png)`,
                     }"
                 ></div>
             </li>

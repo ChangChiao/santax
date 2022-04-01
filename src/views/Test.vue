@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/page-06-watchfinder-header-large.jpg);
+                background-image: url(@/assets/images/banner/page-06-watchfinder-header-large.jpg);
             "
         >
             <div class="slider__content">
@@ -36,7 +36,7 @@
             <h2>經認證的精準度</h2>
         </div>
         <div class="test__core">
-            <img src="/images/test/rolex_way.jpg" alt="" />
+            <img src="@/assets/images/test/rolex_way.jpg" alt="" />
         </div>
         <p class="test__text">
             歷經考驗與測試可靠性能只有少數公司能持續秉承追求卓越、力臻至善、探求原創和嶄新方法的精神。但凡想像得到的嚴苛環境，不管是萬丈深海、巍峨高峰，還是置身在半空或賽道之中，SANTAX腕錶從一開始便歷經重重難關。每枚腕錶在離開製造所前均經最嚴謹的測試，確保所有SANTAX出品都不負眾望，發揮出頂尖水準。
@@ -85,10 +85,10 @@ export default {};
         background-repeat: no-repeat;
         background-size: 100%;
         &.top {
-            background-image: url(/images/test/Shock_Resistance.jpg);
+            background-image: url("~@/assets/images/test/Shock_Resistance.jpg");
         }
         &.bottom {
-            background-image: url(/images/test/Anti_Magnetism.jpg);
+            background-image: url("~@/assets/images/test/Anti_Magnetism.jpg");
         }
     }
     &__intro {
@@ -96,7 +96,7 @@ export default {};
         &:last-child {
             flex-direction: row-reverse;
             .test__intro__item__pic {
-                background-image: url(/images/test/rolex_way_tested_to.jpg);
+                background-image: url("~@/assets/images/test/rolex_way_tested_to.jpg");
             }
         }
         &__item {
@@ -107,7 +107,7 @@ export default {};
             &__pic {
                 height: 0;
                 padding-bottom: 500px;
-                background-image: url(/images/test/rolex_way_tested.jpg);
+                background-image: url("~@/assets/images/test/rolex_way_tested.jpg");
                 background-position: center center;
                 background-repeat: no-repeat;
                 box-sizing: border-box;

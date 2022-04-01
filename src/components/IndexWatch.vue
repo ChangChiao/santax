@@ -12,7 +12,7 @@
                     class="watch__list__item"
                     @click="goPage(vo.link)"
                 >
-                    <img :src="`/images/watch/${vo.img}.png`" alt="" />
+                    <img :src="`@/assets/images/watch/${vo.img}.png`" alt="" />
                     <p>{{ vo.type }}</p>
                     <p>{{ vo.model }}</p>
                     <a>了解更多</a>
@@ -46,7 +46,7 @@ export default {
 .watch {
     height: 0;
     padding-bottom: 500px;
-    background-image: url(/images/homepage.jpg);
+    background-image: url("~@/assets/images/homepage.jpg");
     background-position: center center;
     background-size: cover;
     text-align: center;

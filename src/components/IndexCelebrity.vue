@@ -28,14 +28,14 @@ export default {};
     &__item {
         width: 40%;
         height: 200px;
-        background-image: url("/images/pan.jpg");
+        background-image: url("~@/assets/images/pan.jpg");
         background-size: cover;
         background-position: 40% 50%;
         color: #fff;
         box-sizing: border-box;
         position: relative;
         &.craft {
-            background-image: url("/images/002.jpg");
+            background-image: url("~@/assets/images/002.jpg");
         }
         a {
             display: inline-block;

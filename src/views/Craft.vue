@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/Watchmaking_TetiereLarge_1600x655_homepage.jpg);
+                background-image: url(@/assets/images/banner/Watchmaking_TetiereLarge_1600x655_homepage.jpg);
             "
         >
             <div class="slider__content">
@@ -45,7 +45,7 @@
                 :key="i + 'cr'"
                 class="craft__list__item"
             >
-                <img :src="`/images/world/${vo.img}.png`" alt="" />
+                <img :src="`@/assets/images/world/${vo.img}.png`" alt="" />
                 <h6>{{ vo.name }}</h6>
                 <p>{{ vo.text }}</p>
             </li>
@@ -121,7 +121,7 @@ export default {
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
-                background: url("/images/world/calibre-3255.jpg");
+                background: url("~@/assets/images/world/calibre-3255.jpg");
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
@@ -171,7 +171,7 @@ export default {
     }
     &__design {
         height: 400px;
-        background-image: url(/images/world/designing_main_bg.jpg);
+        background-image: url("~@/assets/images/world/designing_main_bg.jpg");
         background-position: 50% 20%;
     }
     &__pic {
@@ -185,16 +185,16 @@ export default {
             background-size: cover;
             background-repeat: no-repeat;
             &.__0 {
-                background-image: url("/images/world/01.jpg");
+                background-image: url("~@/assets/images/world/01.jpg");
             }
             &.__1 {
-                background-image: url("/images/world/02.jpg");
+                background-image: url("~@/assets/images/world/02.jpg");
             }
             &.__2 {
-                background-image: url("/images/world/03.jpg");
+                background-image: url("~@/assets/images/world/03.jpg");
             }
             &.__3 {
-                background-image: url("/images/world/04.jpg");
+                background-image: url("~@/assets/images/world/04.jpg");
             }
         }
     }

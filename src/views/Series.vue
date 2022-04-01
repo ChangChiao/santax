@@ -2,7 +2,7 @@
     <div
         class="slider"
         :style="{
-            backgroundImage: `url(/images/banner/${series}.jpg)`,
+            backgroundImage: `url(@/assets/images/banner/${series}.jpg)`,
         }"
     >
         <div class="slider__content">
@@ -23,7 +23,7 @@
             @click="goPage(i)"
         >
             <img
-                :src="`/images/watch/${prefix}/${prefix}-${i + 1}.png`"
+                :src="`@/assets/images/watch/${prefix}/${prefix}-${i + 1}.png`"
                 alt=""
             />
             <h3>{{ vo.name }}</h3>

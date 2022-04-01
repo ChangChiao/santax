@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
-    background-image: url("/images/banner/wear.jpg");
+    background-image: url("~@/assets/images/banner/wear.jpg");
     background-position: top right;
     height: 0;
     padding-bottom: 600px;

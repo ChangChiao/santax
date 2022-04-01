@@ -2,7 +2,9 @@
     <div>
         <div
             class="slider"
-            style="background-image: url(/images/banner/watchmaking.jpg)"
+            style="
+                background-image: url(@/assets/images/banner/watchmaking.jpg);
+            "
         >
             <div class="slider__content">
                 <h1 class="slider__content__title">維修中心</h1>

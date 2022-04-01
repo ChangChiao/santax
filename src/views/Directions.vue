@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/watchmaking_player_METAS_Large_1600x900.jpg);
+                background-image: url(@/assets/images/banner/watchmaking_player_METAS_Large_1600x900.jpg);
             "
         >
             <div class="slider__content">
@@ -22,7 +22,7 @@
                 class="direction__list__item"
                 :key="'d' + i"
                 :style="{
-                    backgroundImage: `url(/images/use/${i}.jpg)`,
+                    backgroundImage: `url(@/assets/images/use/${i}.jpg)`,
                 }"
             >
                 <h4>{{ vo.name }}</h4>

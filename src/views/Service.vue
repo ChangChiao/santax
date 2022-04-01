@@ -3,7 +3,7 @@
         <div
             class="slider"
             style="
-                background-image: url(/images/banner/cellini_time_0001_1680x1070.jpg);
+                background-image: url(@/assets/images/banner/cellini_time_0001_1680x1070.jpg);
             "
         >
             <div class="slider__content">
@@ -33,7 +33,10 @@
                 </div>
             </div>
             <div class="service__main__pic">
-                <img :src="`/images/store/store${nowIndex}.jpg`" alt="" />
+                <img
+                    :src="`@/assets/images/store/store${nowIndex}.jpg`"
+                    alt=""
+                />
             </div>
             <div :class="[nowStore.color, 'service__main__bar']"></div>
             <h3>{{ nowStore.name }}</h3>
